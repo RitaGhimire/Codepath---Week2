@@ -109,6 +109,7 @@
   align-items: center;
   margin-top: 2rem;
   gap: 1rem;
+
 }
 
 .nav-btn {
@@ -123,7 +124,24 @@
   cursor: pointer;
 }
 
+.nav-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none; /* optional: fully disable clicks */
+}
+
+
 .nav-btn:hover {
   background-color: #66bb6a;
   transform: translateY(-2px);
 }
+.input-correct {
+  border: 2px solid green;
+  background-color: #e6ffed;
+}
+
+.input-incorrect {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
